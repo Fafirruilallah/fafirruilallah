@@ -1,69 +1,66 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f5f7;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 20px;
-  color: #222;
+  background: #f9f9f9;
+  color: #333;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #2c3e50;
-}
-
-.audio-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 600px;
-  margin: auto;
-}
-
-.audio-block {
-  background-color: #ffffff;
-  border-left: 5px solid #2c3e50;
-  padding: 15px 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  border-radius: 5px;
-}
-
-.audio-block p {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.download-btn {
-  display: inline-block;
-  background-color: #2c3e50;
+header {
+  background: #04364A;
   color: white;
-  padding: 8px 16px;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.surah-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.surah-card {
+  background: white;
+  border-radius: 10px;
   text-decoration: none;
-  font-size: 14px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+  color: #333;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.download-btn:hover {
-  background-color: #1a252f;
+.surah-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 600px) {
-  body {
-    padding: 15px;
-  }
+.surah-names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+}
 
-  .audio-container {
-    gap: 15px;
-  }
+.surah-names span:nth-child(2) {
+  direction: ltr;
+  text-align: left;
+}
 
-  .audio-block {
-    padding: 12px 15px;
-  }
-
-  .download-btn {
-    padding: 8px 14px;
-    font-size: 13px;
-  }
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #555;
+  background: #eee;
 }
