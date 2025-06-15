@@ -22,6 +22,49 @@ header p {
   font-size: 1rem;
   opacity: 0.8;
 }
+.intro-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.intro-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.audio-block {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.audio-block p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.audio-block audio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.play-download-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.play-download-btn:hover {
+  background-color: #004d40;
+}
 
 .surah-grid {
   display: grid;
